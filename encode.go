@@ -100,7 +100,7 @@ func (e *encoder) marshalDoc(tag string, in reflect.Value) {
 	if node != nil && node.Kind == DocumentNode {
 		e.nodev(in)
 	} else {
-		yaml_document_start_event_initialize(&e.event, nil, nil, true)
+		yaml_document_start_event_initialize(&e.event, nil, nil, false)
 		e.emit()
 		e.marshal(tag, in)
 		yaml_document_end_event_initialize(&e.event, true)
