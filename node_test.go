@@ -21,7 +21,7 @@ import (
 	"os"
 
 	. "gopkg.in/check.v1"
-	"gopkg.in/joanamya/yaml.v3"
+	"gopkg.in/joanayma/yaml.v3"
 	"io"
 	"strings"
 )
